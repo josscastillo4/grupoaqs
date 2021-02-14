@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AQS | Agentes AQS</title>
+
+  
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <!-- FancyBox -->
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  
+  <!-- Stylesheets -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+  <div class="page-wrapper">
+    <!-- Preloader -->
+    <!-- <div class="preloader"></div> -->
+    <!-- Preloader -->
+
+  
+
+<!--header top-->
+<div class="header-top">
+      <div class="container clearfix">
+            <div class="top-left">
+                  <h6>Santa Teresa 689 Ciudad de México</h6>
+            </div>
+            <div class="top-right">
+                  <ul class="social-links">
+                        <li>
+                              <a href="https://www.facebook.com/aqsmx/?ref=br_rs" target="_blank">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="https://twitter.com/aqs_mx" target="_blank">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="https://www.instagram.com/grupo_aqs/" target="_blank">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="https://www.linkedin.com/company/aqs-asesores-en-riesgos" target="_blank">
+                                    <i class="fab fa-linkedin-in"aria-hidden="true"></i>
+                              </a>
+                        </li>
+                  </ul>
+            </div>
+      </div>
+</div>
+<!--header top-->
+
+<!--Header Upper-->
+<section class="header-uper">
+      <div class="container clearfix">
+            <div class="logo">
+                  <figure>
+                        <a href="index.html">
+                              <img src="images/logo.png" alt="" width="130">
+                        </a>
+                  </figure>
+            </div>
+            <div class="right-side">
+                  <ul class="contact-info">
+                        <li class="item">
+                              <div class="icon-box">
+                                <a href="mailto:contacto@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                              </div>
+                              <strong>Correo</strong>
+                              <br>
+                                    <span>contacto@grupoaqs.mx</span>
+                              
+                        </li>
+                        <li class="item">
+                              <div class="icon-box">
+                                    <a href="tel:+50022500"><i class="fa fa-phone"></i></a>
+                              </div>
+                              <strong>Llamar</strong>
+                              <br>
+                              <span>+500 22500</span>
+                        </li>
+                  </ul>
+                  <div class="link-btn">
+                        <a href="#" class="btn-style-one">Iniciar Sesión</a>
+                  </div>
+            </div>
+      </div>
+</section>
+<!--Header Upper-->
+
+
+<!--Main Header-->
+<nav class="navbar navbar-default">
+      <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                  </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                        <li class="active">
+                              <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                              <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                              <a href="riesgos.php">Riesgos</a>
+                        </li>
+                        <li>
+                              <a href="gente.html">Gente AQS</a>
+                        </li>
+                        <li>
+                              <a href="agentes.html">Agentes AQS</a>
+                        </li>
+                        <li>
+                              <a href="bolsa.html">Bolsa de Trabajo</a>
+                        </li>
+                        <li>
+                              <a href="contacto.php">Contacto</a>
+                        </li>
+                        <!-- <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                                    <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                    <li>
+                                          <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                          <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                          <a href="#">Something else here</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                          <a href="#">Separated link</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                          <a href="#">One more separated link</a>
+                                    </li>
+                              </ul>
+                        </li> -->
+                  </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+</nav>
+<!--End Main Header -->
+
+
+<!--Page Title-->
+<section class="page-title text-center" style="background-image:url(images/background/Background.jpg);">
+    <div class="container">
+        <div class="title-text">
+            <h1>GENTE AQS</h1>
+            <ul class="title-menu clearfix">
+                <li>
+                    <a href="index.html">Inicio &nbsp;/</a>
+                </li>
+                <li>Gente AQS</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+
+<section class="team-section section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h3>Valor
+                        <span>en el servicio</span>
+                    </h3>
+                    <p>AQS cuenta con las plataformas tecnológicas y capacidad técnica más avanzadas del sector, lo que nos permite enfocar nuestra capacidad a la venta masiva. Tenemos a nuestro cargo importantes Licitaciones y Reaseguro.
+                        <br>Todos nuestros socios y consultores cuentan con una amplia experiencia en el medio asegurador, tanto en la parte de desarrollo y dirección como en la de intermediación profesional. Lo anterior resultando en relaciones de primer nivel en el mercado mexicano de seguro directo, reaseguro y fianzas.</p>
+                </div>
+</section>
+<!--team section-->
+<section class="team-section section">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Gente
+                <span>AQS</span>
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Carlos-Escamilla-Ruiz.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Carlos Escamilla</h4>
+                        <p>Director General 
+                          <br>Contacto:</p>
+                        <a href="mailto:carlos_escamilla@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500 <br>carlos_escamilla@grupoaqs.mx<br>Ext. 2501</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/RebecaGonzalezEscamilla.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                       <h4>Rebeca González</h4>
+                        <p>Director Ejecutivo 
+                          <br>Contacto:</p>
+                        <a href="mailto:rebeca_gonzalez@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>rebeca_gonzalez@grupoaqs.mx<br>Ext. 2516</p>      
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/EleuterioGarcia.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Eleuterio García</h4>
+                        <p>Gerente Comercial Beneficios 
+                          <br>Contacto:</p>
+                        <a href="mailto:eleuterio_garcia@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>eleuterio_garcia@grupoaqs.mx<br>Ext. 2527</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/AnnyAlvarez.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Anny Álvarez</h4>
+                        <p>Gerente Servicio 
+                          <br>Contacto:</p>
+                        <a href="mailto:anny_alvarez@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>anny_alvarez@grupoaqs.mx<br>Ext. 2506</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Erik-Garcia.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Eric García</h4>
+                        <p>Ejecutivo de Daños y Flotillas de Autos. (Todas las Cías.) 
+                          <br>Contacto:</p>
+                        <a href="mailto: erick_garcia@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>erick_garcia@grupoaqs.mx<br>Ext. 2517</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Martin-Lopez.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Martín López</h4>
+                        <p>Ejecutivo Cobranza Axa, Metlife, Mapfre, AIG, Sura, Banorte, GNP, Bupa y Plan Seguro 
+                          <br>Contacto:</p>
+                        <a href="mailto: martin_lopez@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>martin_lopez@grupoaqs.mx<br>Ext. 2503</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Susana-Gomez.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Susana Gómez</h4>
+                        <p>Ejecutivo Beneficios AXA (reembolsos individuales y emisiones individuales vida y GMM) 
+                          <br>Contacto:</p>
+                        <a href="mailto:susana_gomez@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>susana_gomez@grupoaqs.mx<br>Ext. 2509</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Isabel-Herrera.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Isabel Herrera</h4>
+                        <p>Ejecutivo Beneficios Mapfre, Metlife, AIG, Sura, Bupa, Banorte, Plan Seguro, Insignia, Sisnova y GMX y Siniestros todas las Cías Excepto Axa 
+                          <br>Contacto:</p>
+                        <a href="mailto:isabel_herrera@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>isabel_herrera@grupoaqs.mx<br>Ext. 2511</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Paulina-Miranda.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Paulina Miranda</h4>
+                        <p>Ejecutivo Beneficios Axa  y Siniestros  Grupo 
+                          <br>Contacto:</p>
+                        <a href="mailto:paulina_miranda@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>paulina_miranda@grupoaqs.mx<br>Ext. 2510</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Xochitl-Rangel.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Xochitl Rangel</h4>
+                        <p>Cotizaciones de GMM y Autos (Todas las Cías) y Administración de Agentes 
+                          <br>Contacto:</p>
+                        <a href="mailto:xochitl_rangel@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>xochitl_rangel@grupoaqs.mx<br>Ext. 2512</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Emanuel-Navarro.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Emanuel Navarro</h4>
+                        <p>Gerente Comercial Daños y Autos 
+                          <br>Contacto:</p>
+                        <a href="mailto:emanuel_navarro@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>emanuel_navarro@grupoaqs.mx<br>Ext. 2507</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Christian-Gutierrez.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Christian Gutiérrez</h4>
+                        <p>Ejecutivo Cobranza Qualitas, HDI, Zurich y Siniestros Autos (Todas las Cías.) 
+                          <br>Contacto:</p>
+                        <a href="mailto:christian_gutierrez@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>christian_gutierrez@grupoaqs.mx<br>Ext. 2530</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Liz-Aguirre.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Lizbeth Aguirre</h4>
+                        <p>Ejecutivo de Cuenta Toluca 
+                          <br>Contacto:</p>
+                        <a href="mailto:lizbeth_aguirre@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>lizbeth_aguirre@grupoaqs.mx<br>Ext. 2525</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Nallely-Villa.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Nallely Villa</h4>
+                        <p>Asistente Administrativo 
+                          <br>Contacto:</p>
+                        <a href="mailto:nallely_villacetin@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+722 2712474 "><i class="fas fa-phone fa-2x"></i></a><p>722 2712474<br>nallely_villacetin@grupoaqs.mx<br></p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Edith-Barrios.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Edith Barrios</h4>
+                        <p>Gerente de Atracción y Capacitación 
+                          <br>Contacto:</p>
+                        <a href="mailto: edith_barrios@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>edith_barrios@grupoaqs.mx<br>Ext. 2504</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Milka-Escamilla-Ruiz.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Milka Escamilla</h4>
+                        <p>Gerente Oficina Toluca 
+                          <br>Contacto:</p>
+                        <a href="mailto:milka_escamilla@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+722 2712474"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>722 2712474<br>milka_escamilla@grupoaqs.mx<br>Ext. 106</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Fernanda-Rojas.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>María Fernanda Rojas</h4>
+                        <p>Marketing y Reclutamiento 
+                          <br>Contacto:</p>
+                        <a href="mailto:fernanda_rojas@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+50022500"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>50022500<br>fernanda_rojas@grupoaqs.mx<br>Ext. 2515</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Ruth-Navarro.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Ruth Navarro</h4>
+                        <p>Ejecutivo de Cuenta AQS Agente 
+                          <br>Contacto:</p>
+                        <a href="mailto:ruth_navarro@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+15559985"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>15559985<br>ruth_navarro@grupoaqs.mx<br>Ext. 135</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Isabel-Herrera.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Isabel Morales</h4>
+                        <p>Auxiliar Autos (cotizaciones y emisiones auto individual, todas las Cías.)  
+                          <br>Contacto:</p>
+                        <a href="mailto:?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>Ext. </p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/Reyna-Roa.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>Reyna Roa</h4>
+                        <p>Ejecutivo de Cuanta AQS Agente 
+                          <br>Contacto:</p>
+                        <a href="mailto:reyna_roa@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+87513763"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>87513763<br>reyna_roa@grupoaqs.mx<br>Ext. 2513</p>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="team-member">
+                    <img src="images/team/William-MontesdeOca.jpg" alt="doctor" class="img-responsive">
+                    <div class="contents text-center">
+                        <h4>William Montes de Oca</h4>
+                        <p>Auxiliar Administrativo 
+                          <br>Contacto:</p>
+                        <a href="mailto:wmontes_5@hotmail.com?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tel:+"><i class="fas fa-phone fa-2x"></i></a>
+                        <p>wmontes_5@hotmail.com<br>Ext. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End team section-->
+<!--footer-main-->
+<footer class="footer-main">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="about-widget">
+            <div class="footer-logo">
+              <figure>
+                <a href="index.html">
+                  <img src="images/logo.png" alt="">
+                </a>
+              </figure>
+            </div>
+            
+            <ul class="location-link">
+              <li class="item">
+                <a href="https://goo.gl/maps/M8A3hA3KtgxU4mSP7" target="_blank"><i class="fa fa-map-marker"></i></a>
+                <p>Santa Teresa 689 Ciudad de México</p>
+              </li>
+              <li class="item">
+                <a href="mailto:contacto@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                  <p>contacto@grupoaqs.mx</p>
+                
+              </li>
+              <li class="item">
+                <a href="tel:+50022500"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <p>+500 22500</p>
+              </li>
+            </ul>
+            <ul class="list-inline social-icons">
+              <li><a href="https://www.facebook.com/aqsmx/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://twitter.com/aqs_mx" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/grupo_aqs/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/aqs-asesores-en-riesgos" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h6>Alianzas</h6>
+          <ul class="menu-link">
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>MetLife</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Seguros Banorte</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Bupa</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Zurich</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>HDI</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="social-links">
+            <h6>Servicios</h6>
+            <ul>
+              <li class="item">
+                <div class="media">
+                 
+                  <div class="media-body">
+                    <h4 class="media-heading" style="font-size:14px"><a href="#">Licitaciones</a></h4>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="media-heading" style="font-size:14px">
+                      <a href="#">Descuentos especiales</a>
+                    </h4>
+                  </div>
+                </div>
+              </li>
+                 <li class="item">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="media-heading"style="font-size:14px">
+                      <a href="#">Servicio personalizado a la medida del cliente</a>
+                    </h4>
+                  </div>
+                </div>
+              </li>
+                 <li class="item">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="media-heading" style="font-size:14px">
+                      <a href="#">Asesoría</a>
+                    </h4>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container clearfix">
+      <div class="copyright-text">
+        <p>&copy; Copyright 2019. Todos los derechos reservados
+          <a href="index.html">por el Grupo AQS</a>
+        </p>
+      </div>
+      <ul class="footer-bottom-link">
+        <li>*Aviso de privacidad:</li>
+        <li>Correo: privacidad@grupoaqs.mx</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!--End footer-main-->
+</div>
+<!--End pagewrapper-->
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".header-top">
+  <span class="icon fa fa-angle-up"></span>
+</div>
+
+<script src="plugins/jquery.js"></script>
+<script src="plugins/bootstrap.min.js"></script>
+<script src="plugins/bootstrap-select.min.js"></script>
+<!-- Slick Slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- FancyBox -->
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<script src="plugins/validate.js"></script>
+<script src="plugins/wow.js"></script>
+<script src="plugins/jquery-ui.js"></script>
+<script src="plugins/timePicker.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

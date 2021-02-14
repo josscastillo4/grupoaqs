@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AQS | Agentes AQS</title>
+
+  
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <!-- FancyBox -->
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <!-- Stylesheets -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+
+<body>
+  <div class="page-wrapper">
+    <!-- Preloader -->
+    <!-- <div class="preloader"></div> -->
+    <!-- Preloader -->
+
+  
+
+<!--header top-->
+<div class="header-top">
+      <div class="container clearfix">
+            <div class="top-left">
+                  <h6>Santa Teresa 689 Ciudad de México</h6>
+            </div>
+            <div class="top-right">
+                  <ul class="social-links">
+                        <li>
+                              <a href="https://www.facebook.com/aqsmx/?ref=br_rs" target="_blank">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="https://twitter.com/aqs_mx" target="_blank">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="https://www.instagram.com/grupo_aqs/" target="_blank">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="https://www.linkedin.com/company/aqs-asesores-en-riesgos" target="_blank">
+                                    <i class="fab fa-linkedin-in"aria-hidden="true"></i>
+                              </a>
+                        </li>
+                  </ul>
+            </div>
+      </div>
+</div>
+<!--header top-->
+
+<!--Header Upper-->
+<section class="header-uper">
+      <div class="container clearfix">
+            <div class="logo">
+                  <figure>
+                        <a href="index.html">
+                              <img src="images/logo.png" alt="" width="130">
+                        </a>
+                  </figure>
+            </div>
+            <div class="right-side">
+                  <ul class="contact-info">
+                        <li class="item">
+                              <div class="icon-box">
+                                <a href="mailto:contacto@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                              </div>
+                              <strong>Correo</strong>
+                              <br>
+                                    <span>contacto@grupoaqs.mx</span>
+                              
+                        </li>
+                        <li class="item">
+                              <div class="icon-box">
+                                    <a href="tel:+50022500"><i class="fa fa-phone"></i></a>
+                              </div>
+                              <strong>Llamar</strong>
+                              <br>
+                              <span>+500 22500</span>
+                        </li>
+                  </ul>
+                  <div class="link-btn">
+                        <a href="#" class="btn-style-one">Iniciar Sesión</a>
+                  </div>
+            </div>
+      </div>
+</section>
+<!--Header Upper-->
+
+
+<!--Main Header-->
+<nav class="navbar navbar-default">
+      <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                  </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                        <li class="active">
+                              <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                              <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                              <a href="riesgos.php">Riesgos</a>
+                        </li>
+                        <li>
+                              <a href="gente.html">Gente AQS</a>
+                        </li>
+                        <li>
+                              <a href="agentes.html">Agentes AQS</a>
+                        </li>
+                        <li>
+                              <a href="bolsa.html">Bolsa de Trabajo</a>
+                        </li>
+                        <li>
+                              <a href="contacto.php">Contacto</a>
+                        </li>
+                        <!-- <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                                    <span class="caret"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                    <li>
+                                          <a href="#">Action</a>
+                                    </li>
+                                    <li>
+                                          <a href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                          <a href="#">Something else here</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                          <a href="#">Separated link</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                          <a href="#">One more separated link</a>
+                                    </li>
+                              </ul>
+                        </li> -->
+                  </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+</nav>
+<!--End Main Header -->
+
+<!--=================================
+=            Page Slider            =
+==================================-->
+<section class="slider-nuevo">
+    <ul class="rslides">
+        <li><img src="images/slider/slider-bg-1.png" alt=""></li>
+        <li><img src="images/slider/slider-bg-3.jpg" alt=""></li>
+        <li><img src="images/slider/slider-bg-2.png" alt=""></li>
+    </ul>
+  </section>
+
+<!--====  End of Page Slider  ====-->
+
+<section class="cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cta-block">
+                    <div class="emmergency item">
+                        <i class="fab fa-accusoft"></i>
+                        <a href="nosotros.html"><h2>Grupo AQS</h2></a>
+                        <p>Somos un grupo de empresarios movidos por la necesidad de protección del patrimonio de los mexicanos, con más de 25 años de experiencia en el sector.</p>
+                    </div>
+                    <div class="top-doctor item">
+                        <i class="fas fa-users"></i>
+                        <h2>Gente AQS</h2>
+                        <p>Asesores profesionales en protección patrimonial. Primer nivel en el mercado mexicano.<br><a href="gente.html" class="btn btn-main">Ver Más</a></p>
+                    </div>
+                    <div class="working-time item">
+                        <i class="fas fa-users-cog"></i>
+                        <h2>Agentes AQS</h2>
+                         <p>Tenemos a nuestro cargo importantes Licitaciones y Reaseguro.<br><br>
+                         <a href="agentes.html" class="btn btn-main">Ver Más</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--about section-->
+<section class="feature-section section bg-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<div class="image-content">
+					<div class="section-title text-center">
+						<h3>Servicios
+							<span></span>
+						</h3>
+						<p></p>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="icon-box">
+									<figure>
+										<a href="#">
+											<i class="fas fa-coins fa-4x" style="color:#E67A2B;"></i>
+										</a>
+									</figure>
+								</div>
+								<h6>Licitaciones</h6>
+								<p>Contamos con un área especializada y personal capacitado y con amplia experiencia para realizar cualquier tipo de concurso o licitación.</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="icon-box">
+									<figure>
+										<a href="#">
+											<i class="fas fa-percentage fa-4x"style="color:#E67A2B;"></i>
+										</a>
+									</figure>
+								</div>
+								<h6>Descuentos Especiales</h6>
+								<p>Tenemos con cada Compañía Aseguradora importantes acuerdos comerciales  y grandes convenios para ofrecer los descuentos más atractivos del mercado</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="icon-box">
+									<figure>
+										<a href="#">
+											<i class="fas fa-user-tie fa-4x" style="color:#E67A2B;"></i>
+										</a>
+									</figure>
+								</div>
+								<h6>Servicio Personalizado a la Medida del Cliente</h6>
+								<p>Trabajamos con todas las compañías aseguradoras que ofrecen  todo tipo de protección y cobertura de acuerdo a las necesidades de cada uno de nuestros clientes.</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="item">
+								<div class="icon-box">
+									<figure>
+										<a href="#">
+											<i class="fas fa-people-carry fa-4x" style="color:#E67A2B;"></i>
+										</a>
+									</figure>
+								</div>
+								<h6>Asesoría</h6>
+								<p>Toda buena protección patrimonial y financiera requiere de una gran asesoría y en AQS colaboran reconocidos asesores profesionales, especialistas en los diferentes ramos y representando a las compañías más importantes del mercado.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--End about section-->
+
+
+<!--Service Section-->
+<section class="service-section bg-gray section">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Alianzas
+                <span></span>
+            </h3>
+            <p></p>
+        </div>
+        <div class="row items-container clearfix">
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="#">
+                            <img src="images/alianzas/AIG.png" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="image-content text-center">
+                        <span></span>
+                        <a href="#">
+                            <h6></h6>
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="#">
+                            <img src="images/alianzas/AXA.png" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="image-content text-center">
+                        <span></span>
+                        <a href="#">
+                            <h6></h6>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="#">
+                            <img src="images/alianzas/Bupa.png" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="image-content text-center">
+                        <span></span>
+                        <a href="#">
+                            <h6></h6>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="#">
+                            <img src="images/alianzas/GNP.png" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="image-content text-center">
+                        <span></span>
+                        <a href="#">
+                            <h6></h6>
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="#">
+                            <img src="images/alianzas/HDI.png" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="image-content text-center">
+                        <span></span>
+                        <a href="#">
+                            <h6></h6>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="#">
+                            <img src="images/alianzas/Mapfre.png" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="image-content text-center">
+                        <span></span>
+                        <a href="#">
+                            <h6></h6>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+              <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="#">
+                            <img src="images/alianzas/Metlife.png" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="image-content text-center">
+                        <span></span>
+                        <a href="#">
+                            <h6></h6>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+                <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="#">
+                            <img src="images/alianzas/Qualitas.png" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="image-content text-center">
+                        <span></span>
+                        <a href="#">
+                            <h6></h6>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+                 <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="#">
+                            <img src="images/alianzas/RSA.png" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="image-content text-center">
+                        <span></span>
+                        <a href="#">
+                            <h6></h6>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+                     <div class="item">
+                <div class="inner-box">
+                    <div class="img_holder">
+                        <a href="#">
+                            <img src="images/alianzas/Zurich.png" alt="images" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="image-content text-center">
+                        <span></span>
+                        <a href="#">
+                            <h6></h6>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Service Section-->
+
+<!--footer-main-->
+<footer class="footer-main">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="about-widget">
+            <div class="footer-logo">
+              <figure>
+                <a href="index.html">
+                  <img src="images/logo.png" alt="">
+                </a>
+              </figure>
+            </div>
+            
+            <ul class="location-link">
+              <li class="item">
+                <a href="https://goo.gl/maps/M8A3hA3KtgxU4mSP7" target="_blank"><i class="fa fa-map-marker"></i></a>
+                <p>Santa Teresa 689 Ciudad de México</p>
+              </li>
+              <li class="item">
+                <a href="mailto:contacto@grupoaqs.mx?Subject=Interesado%20en%20el%20curso"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                  <p>contacto@grupoaqs.mx</p>
+                
+              </li>
+              <li class="item">
+                <a href="tel:+50022500"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <p>+500 22500</p>
+              </li>
+            </ul>
+            <ul class="list-inline social-icons">
+              <li><a href="https://www.facebook.com/aqsmx/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://twitter.com/aqs_mx" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/grupo_aqs/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/aqs-asesores-en-riesgos" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <h6>Alianzas</h6>
+          <ul class="menu-link">
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>MetLife</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Seguros Banorte</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Bupa</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Zurich</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>HDI</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="social-links">
+            <h6>Servicios</h6>
+            <ul>
+              <li class="item">
+                <div class="media">
+                 
+                  <div class="media-body">
+                    <h4 class="media-heading" style="font-size:14px"><a href="#">Licitaciones</a></h4>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="media-heading" style="font-size:14px">
+                      <a href="#">Descuentos especiales</a>
+                    </h4>
+                  </div>
+                </div>
+              </li>
+                 <li class="item">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="media-heading"style="font-size:14px">
+                      <a href="#">Servicio personalizado a la medida del cliente</a>
+                    </h4>
+                  </div>
+                </div>
+              </li>
+                 <li class="item">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="media-heading" style="font-size:14px">
+                      <a href="#">Asesoría</a>
+                    </h4>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container clearfix">
+      <div class="copyright-text">
+        <p>&copy; Copyright 2019. Todos los derechos reservados
+          <a href="index.html">por el Grupo AQS</a>
+        </p>
+      </div>
+      <ul class="footer-bottom-link">
+        <li>*Aviso de privacidad:</li>
+        <li>Correo: privacidad@grupoaqs.mx</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!--End footer-main-->
+
+</div>
+<!--End pagewrapper-->
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".header-top">
+  <span class="icon fa fa-angle-up"></span>
+</div>
+<script src="plugins/jquery.js"></script>
+<script src="plugins/bootstrap.min.js"></script>
+<script src="plugins/bootstrap-select.min.js"></script>
+<!-- Slick Slider -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<!-- FancyBox -->
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<script src="plugins/validate.js"></script>
+<script src="plugins/wow.js"></script>
+<script src="plugins/jquery-ui.js"></script>
+<script src="plugins/timePicker.js"></script>
+<script src="js/script.js"></script>
+<script src="js/scriptslider.js"></script>
+</body>
+
+</html>
+
